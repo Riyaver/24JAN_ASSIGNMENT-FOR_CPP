@@ -1,5 +1,10 @@
 Riya Verma
 HB.ID: 962402620
+1.	Write a program that creates a class called "Student" with the following data members:
+name (string)
+age (int)
+grade (double)
+In the main function, create an instance of the Student class and initialize its data members. Then, open a file for writing and write the contents of the Student object to the file.
 
 
 #include<iostream>
