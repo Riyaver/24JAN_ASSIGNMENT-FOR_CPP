@@ -1,0 +1,26 @@
+Riya Verma
+HB.ID: 962402620
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+class student
+{
+	public:
+		string name;
+		int age;
+		double grade;
+};
+int main()
+{
+    student s;
+    s.age=22;
+    s.name="abc";
+    s.grade=8.2;
+    fstream f;
+	f.open("details", ios::out);
+	f<<"name: "<<s.name<<" age: "<<s.age<<" grade: "<<s.grade;
+	f.close();
+
+}
