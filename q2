@@ -1,1 +1,31 @@
+Riya Verma
+HB.ID: 962402620
 
+2.	Write a program that reads the contents of a file containing Student objects and prints them to the console. The program should open the file, read the Student objects one at a time, and print their name, age, and grade to the console.
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+class student
+{
+	public:
+		string name;
+		int age;
+		double grade;
+};
+int main()
+{
+    student s;
+    s.age=22;
+    s.name="abc";
+    s.grade=8.2;
+    fstream f;
+    string str;
+	f.open("details", ios::in);
+	while(f>>str)
+	{
+		cout<<str<<" ";
+	}
+	f.close();
+
+}
